@@ -1,6 +1,6 @@
 name: LanguageAPI
 version: 2.0
 main: de.max_overlack.languageapi.LanguageAPIPlugin
-api-version: 1.13
+api-version: 1.14
 author: Majo
 description: Allows plugin developers to easily support multiple languages.
