@@ -1,5 +1,7 @@
-package net.just_vanilla.languageapi;
+package de.max_overlack.languageapi;
 
+import de.max_overlack.languageapi.LanguageAPIPlugin;
+import de.max_overlack.languageapi.RegisteredPlugin;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -17,8 +19,6 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
 import java.util.logging.Logger;
-import net.just_vanilla.languageapi.LanguageAPIPlugin;
-import net.just_vanilla.languageapi.RegisteredPlugin;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.chat.BaseComponent;
