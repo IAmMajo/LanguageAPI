@@ -1,8 +1,8 @@
-package net.just_vanilla.languageapi;
+package de.max_overlack.languageapi;
 
+import de.max_overlack.languageapi.RegisteredPlugin;
 import java.util.HashMap;
 import java.util.Map;
-import net.just_vanilla.languageapi.RegisteredPlugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class LanguageAPIPlugin extends JavaPlugin {

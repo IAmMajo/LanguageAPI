@@ -1,4 +1,4 @@
-package net.just_vanilla.languageapi;
+package de.max_overlack.languageapi;
 
 import java.util.HashMap;
 import java.util.Map;
