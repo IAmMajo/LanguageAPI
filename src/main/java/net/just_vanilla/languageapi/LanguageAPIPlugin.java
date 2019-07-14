@@ -3,9 +3,9 @@ package net.just_vanilla.languageapi;
 import java.util.HashMap;
 import java.util.Map;
 import net.just_vanilla.languageapi.RegisteredPlugin;
-import org.bukkit.plugin.java.JavaPlugin;
+import net.md_5.bungee.api.plugin.Plugin;
 
-public final class LanguageAPIPlugin extends JavaPlugin {
+public final class LanguageAPIPlugin extends Plugin {
 
     private static LanguageAPIPlugin instance;
     private final Map<String, RegisteredPlugin> registeredPlugins;

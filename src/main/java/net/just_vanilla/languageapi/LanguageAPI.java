@@ -20,11 +20,11 @@ import java.util.logging.Logger;
 import net.just_vanilla.languageapi.LanguageAPIPlugin;
 import net.just_vanilla.languageapi.RegisteredPlugin;
 import net.md_5.bungee.api.ChatColor;
+import net.md_5.bungee.api.CommandSender;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import net.md_5.bungee.api.chat.TextComponent;
-import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
+import net.md_5.bungee.api.connection.ProxiedPlayer;
 
 public final class LanguageAPI {
 
@@ -246,14 +246,14 @@ public final class LanguageAPI {
      * @return The current language of the CommandSender.
      */
     public static String getLanguage(final CommandSender sender) {
-        if (!(sender instanceof Player))
+        if (!(sender instanceof ProxiedPlayer))
             return "en";
 
-        final String locale = ((Player) sender).getLocale();
+        final Locale locale = ((ProxiedPlayer) sender).getLocale();
         if (locale == null)
             return "en";
 
-        return new Locale(locale.split("_")[0]).getLanguage();
+        return locale.getLanguage();
     }
 
     private static Map<String, String> getPlaceholders(final String pluginName,
