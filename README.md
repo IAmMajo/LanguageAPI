@@ -1,4 +1,4 @@
-# LanguageAPI
+# LanguageAPI BungeeCord
 Allows plugin developers to easily support multiple languages.
 
 This is the version for BungeeCord. [Click here to go to the version for Spigot!](https://github.com/Majoeins/LanguageAPI)
