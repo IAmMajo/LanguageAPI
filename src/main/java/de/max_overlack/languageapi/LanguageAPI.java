@@ -75,13 +75,15 @@ public final class LanguageAPI {
      * @param pluginName The name of your plugin.
      * @param name The name of the message.
      * @param message The default English version of the message. You can use
-     *                color codes by using the character '&'. Placeholders are
-     *                created by using the character '§'. Examples:
+     *                color codes by using the character '&amp;'. Placeholders
+     *                are created by using the character '&sect;'. Examples:
      *                <ul>
-     *                  <li>"&aYour balance is &6§balance§&a!"</li>
+     *                  <li>"&amp;aYour balance is
+     *                  &amp;6&sect;balance&sect;&amp;a!"</li>
      *                  <li>"This is a message, which contains multiple
-     *                  placeholders: §placeholder1§, §placeholder2§ and
-     *                  §placeholder3§"</li>
+     *                  placeholders: &sect;placeholder1&sect;,
+     *                  &sect;placeholder2&sect; and
+     *                  &sect;placeholder3&sect;"</li>
      *                </ul>
      */
     public static void registerMessage(final String pluginName,
