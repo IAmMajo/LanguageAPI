@@ -146,10 +146,10 @@ public final class LanguageAPI {
      * @param name The name of the message.
      * @param sender The CommandSender that the message should be displayed to.
      * @param placeholderReplacements Only needed if there are placeholders in
-     *                                the message. The replacements for the pla-
-     *                                ceholders in the message. They have to be
-     *                                in the same order like the placeholders in
-     *                                the default English version of the
+     *                                the message. The replacements for the
+     *                                placeholders in the message. They have to
+     *                                be in the same order like the placeholders
+     *                                in the default English version of the
      *                                message.
      * @return The translated message as ComponentBuilder. Useful for creating
      *         things like clickable messages.
@@ -167,10 +167,10 @@ public final class LanguageAPI {
      * @param name The name of the message.
      * @param sender The CommandSender that the message should be displayed to.
      * @param placeholderReplacements Only needed if there are placeholders in
-     *                                the message. The replacements for the pla-
-     *                                ceholders in the message. They have to be
-     *                                in the same order like the placeholders in
-     *                                the default English version of the
+     *                                the message. The replacements for the
+     *                                placeholders in the message. They have to
+     *                                be in the same order like the placeholders
+     *                                in the default English version of the
      *                                message.
      * @return The translated message as BaseComponents. Useful for creating
      *         things like clickable messages.
@@ -188,10 +188,10 @@ public final class LanguageAPI {
      * @param name The name of the message.
      * @param sender The CommandSender that the message should be displayed to.
      * @param placeholderReplacements Only needed if there are placeholders in
-     *                                the message. The replacements for the pla-
-     *                                ceholders in the message. They have to be
-     *                                in the same order like the placeholders in
-     *                                the default English version of the
+     *                                the message. The replacements for the
+     *                                placeholders in the message. They have to
+     *                                be in the same order like the placeholders
+     *                                in the default English version of the
      *                                message.
      * @return The translated message.
      */
