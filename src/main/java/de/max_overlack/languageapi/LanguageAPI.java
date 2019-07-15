@@ -79,8 +79,8 @@ public final class LanguageAPI {
      *                created by using the character '§'. Examples:
      *                <ul>
      *                  <li>"&aYour balance is &6§balance§&a!"</li>
-     *                  <li>"This is a message, which contains multiple place-
-     *                  holders: §placeholder1§, §placeholder2§ and
+     *                  <li>"This is a message, which contains multiple
+     *                  placeholders: §placeholder1§, §placeholder2§ and
      *                  §placeholder3§"</li>
      *                </ul>
      */
@@ -149,7 +149,8 @@ public final class LanguageAPI {
      *                                the message. The replacements for the pla-
      *                                ceholders in the message. They have to be
      *                                in the same order like the placeholders in
-     *                                the default English message.
+     *                                the default English version of the
+     *                                message.
      * @return The translated message as ComponentBuilder. Useful for creating
      *         things like clickable messages.
      */
@@ -169,8 +170,9 @@ public final class LanguageAPI {
      *                                the message. The replacements for the pla-
      *                                ceholders in the message. They have to be
      *                                in the same order like the placeholders in
-     *                                the default English message.
-     * @return The translated message as ComponentBuilder. Useful for creating
+     *                                the default English version of the
+     *                                message.
+     * @return The translated message as BaseComponents. Useful for creating
      *         things like clickable messages.
      */
     public static BaseComponent[] getMessageAsBaseComponents(
@@ -189,7 +191,8 @@ public final class LanguageAPI {
      *                                the message. The replacements for the pla-
      *                                ceholders in the message. They have to be
      *                                in the same order like the placeholders in
-     *                                the default English message.
+     *                                the default English version of the
+     *                                message.
      * @return The translated message.
      */
     public static String getMessage(final String pluginName, final String name,
@@ -219,10 +222,11 @@ public final class LanguageAPI {
      * @param pluginName The name of your plugin.
      * @param messageName The name of the message.
      * @param placeholderReplacements Only needed if there are placeholders in
-     *                                the message. The replacements for the pla-
-     *                                ceholders in the message. They have to be
-     *                                in the same order like the placeholders in
-     *                                the default English message.
+     *                                the message. The replacements for the
+     *                                placeholders in the message. They have to
+     *                                be in the same order like the placeholders
+     *                                in the default English version of the
+     *                                message.
      * @return All versions of the message. Useful for checking things like if
      *         someone clicked in a specific inventory that has different names
      *         in different languages. 
