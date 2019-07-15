@@ -31,8 +31,8 @@ public final class LanguageAPI {
     private LanguageAPI() {}
 
     /**
-     * You have to call this method in onEnable() before registering all messa-
-     * ges of your plugin using registerMessage().
+     * You have to call this method in onEnable() before registering all
+     * messages of your plugin using registerMessage().
      * 
      * @param name The name of your plugin.
      */
