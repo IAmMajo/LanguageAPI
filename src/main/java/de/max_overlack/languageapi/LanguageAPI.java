@@ -38,17 +38,18 @@ public final class LanguageAPI {
      */
     public static void registerPlugin(final String name) {
         final LanguageAPIPlugin plugin = LanguageAPIPlugin.getInstance();
+        final RegisteredPlugin registeredPlugin = new RegisteredPlugin();
+        plugin.getRegisteredPlugins().put(name, registeredPlugin);
+
         final File folder = new File(plugin.getDataFolder(), name);        
         if (folder.mkdir())
             return;
 
-        final RegisteredPlugin registeredPlugin = new RegisteredPlugin();
         final Logger logger = plugin.getLogger();
         final Map<String, Map<String, String>> registeredPluginLanguages
         = registeredPlugin.getLanguages();
         final Gson gson = new GsonBuilder().disableHtmlEscaping().create();
         final Type type = new TypeToken<Map<String, String>>() {}.getType();
-        plugin.getRegisteredPlugins().put(name, registeredPlugin);
         logger.info("Loading language files of plugin " + name);
         for (final File languageFile : folder.listFiles()) {
             final String languageFileName = languageFile.getName();
